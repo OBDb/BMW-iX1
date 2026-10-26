@@ -105,12 +105,12 @@
   ]},
 { "hdr": "6F1", "rax": "607", "eax": "07", "fcm1": true, "cmd": {"22": "E561"}, "freq": 1, "dbgfilter": { "to": 2025, "from": 2027 },
   "signals": [
-    {"id": "IX1_HVBAT_CHG_CURRENT", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 655.35, "div": 100, "unit": "amps" }, "name": "HV battery charge current", "description": "Current into the battery only (AC/DC charging and regen); 0 while discharging. Bytes 0-1 always 0."}
+    {"id": "IX1_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 32, "max": 1000, "min": -1000, "mul": -1, "div": 100, "sign": true, "unit": "amps" }, "name": "High voltage battery current", "suggestedMetric": "tractionBatteryCurrent"}
   ]},
 { "hdr": "6F1", "rax": "607", "eax": "07", "fcm1": true, "cmd": {"22": "E5C7"}, "freq": 1, "dbgfilter": { "to": 2025, "from": 2027 },
   "signals": [
-    {"id": "IX1_HVBAT_ENERGY",     "path": "Battery", "fmt": {           "len": 16, "max": 605.35, "min": -50, "div": 100, "add": -50, "unit": "kilowattHours" }, "name": "HV battery stored energy",   "description": "Displayed SoC = stored energy / usable capacity (dash shows the floor)."},
-    {"id": "IX1_HVBAT_CAP_USABLE", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 605.35, "min": -50, "div": 100, "add": -50, "unit": "kilowattHours" }, "name": "HV battery usable capacity"}
+    {"id": "IX1_HVBAT_E_STORED", "path": "Battery", "fmt": {           "len": 16, "max": 605.35, "div": 100, "add": -50, "unit": "kilowattHours" }, "name": "HV battery energy stored"},
+    {"id": "IX1_HVBAT_E_CAP",    "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 605.35, "div": 100, "add": -50, "unit": "kilowattHours" }, "name": "HV battery energy capacity", "suggestedMetric": "tractionBatteryCapacity"}
   ]},
 { "hdr": "6F1", "rax": "607", "eax": "07", "fcm1": true, "cmd": {"22": "E5CE"}, "freq": 1, "dbgfilter": { "to": 2025, "from": 2027 },
   "signals": [
