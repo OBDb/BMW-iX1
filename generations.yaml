@@ -1,0 +1,8 @@
+references:
+  - "https://en.wikipedia.org/wiki/BMW_X1"
+
+generations:
+  - name: "First Generation (U11)"
+    start_year: 2023
+    end_year: null
+    description: "The iX1 is the battery-electric version of the third-generation X1 (U11), built on the same front-drive UKL2 platform as the gasoline, diesel and plug-in hybrid X1 and assembled alongside them. The xDrive30 has a motor on each axle; the eDrive20 has one motor driving the front wheels. It shares the X1's body and interior, including the curved display, but replaces the engine computer with a high-voltage battery and charging electronics, and some modules it shares with the X1 answer on different addresses."
