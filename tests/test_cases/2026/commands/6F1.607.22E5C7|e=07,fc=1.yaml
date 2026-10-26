@@ -1,0 +1,50 @@
+command_id: 6F1.607.22E5C7|e=07,fc=1
+test_cases:
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.35
+    IX1_HVBAT_ENERGY: 44
+  response: |-
+    607F1100762E5C724B8
+    607F1212BE3
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.69
+    IX1_HVBAT_ENERGY: 45.5
+  response: |-
+    607F1100762E5C7254E
+    607F1212C05
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.72
+    IX1_HVBAT_ENERGY: 45.74
+  response: |-
+    607F1100762E5C72566
+    607F1212C08
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.72
+    IX1_HVBAT_ENERGY: 46.01
+  response: |-
+    607F1100762E5C72581
+    607F1212C08
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.72
+    IX1_HVBAT_ENERGY: 46.29
+  response: |-
+    607F1100762E5C7259D
+    607F1212C08
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.84
+    IX1_HVBAT_ENERGY: 54.58
+  response: |-
+    607F1100762E5C728DA
+    607F1212C14
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.88
+    IX1_HVBAT_ENERGY: 58.21
+  response: |-
+    607F1100762E5C72A45
+    607F1212C18
+- expected_values:
+    IX1_HVBAT_CAP_USABLE: 62.9
+    IX1_HVBAT_ENERGY: 59.38
+  response: |-
+    607F1100762E5C72ABA
+    607F1212C1A

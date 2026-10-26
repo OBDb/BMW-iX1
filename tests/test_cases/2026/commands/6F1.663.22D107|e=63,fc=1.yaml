@@ -1,0 +1,34 @@
+command_id: 6F1.663.22D107|e=63,fc=1
+test_cases:
+- expected_values:
+    IX1_VSS: 0
+  response: |-
+    663F10562D1070000
+- expected_values:
+    IX1_VSS: 6.6
+  response: |-
+    663F10562D1070042
+- expected_values:
+    IX1_VSS: 11.9
+  response: |-
+    663F10562D1070077
+- expected_values:
+    IX1_VSS: 16.9
+  response: |-
+    663F10562D10700A9
+- expected_values:
+    IX1_VSS: 22.3
+  response: |-
+    663F10562D10700DF
+- expected_values:
+    IX1_VSS: 27.5
+  response: |-
+    663F10562D1070113
+- expected_values:
+    IX1_VSS: 33.4
+  response: |-
+    663F10562D107014E
+- expected_values:
+    IX1_VSS: 53.1
+  response: |-
+    663F10562D1070213
