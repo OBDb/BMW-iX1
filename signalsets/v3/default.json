@@ -161,6 +161,20 @@
     {"id": "IX1_TPMS_RX_RR",  "path": "Tires", "fmt": {"bix": 96,  "len": 8,  "max": 255,                "nullmax": 255, "unit": "percent"    }, "name": "Tire sensor reception, rear right"},
     {"id": "IX1_TPMS_BAT_RR", "path": "Tires", "fmt": {"bix": 120, "len": 16, "max": 65535,                              "unit": "scalar"     }, "name": "Rear right tire sensor battery life, months"}
   ]},
+{ "hdr": "6F1", "rax": "630", "eax": "30", "fcm1": true, "cmd": {"22": "DB57"}, "freq": 1, "dbgfilter": { "to": 2025, "from": 2027 },
+  "signals": [
+    {"id": "IX1_B_MODE", "path": "Transmission", "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "offon" }, "name": "B mode, strong regeneration", "description": "Byte 4 is FF in B and 00 otherwise. The ECU does not answer while DC charging."}
+  ]},
+{ "hdr": "6F1", "rax": "63A", "eax": "3A", "fcm1": true, "cmd": {"22": "E5B0"}, "freq": 1, "dbgfilter": { "to": 2025, "from": 2027 },
+  "signals": [
+    {"id": "IX1_GEAR_SHIFT", "path": "Transmission", "name": "Shift gear", "description": "Gear selector position. D reads the same in B mode, see DB57. The ECU does not answer while DC charging.", "fmt": {"len": 8, "map": {
+          "5": { "description": "Drive",   "value": "DRIVE" },
+          "6": { "description": "Neutral", "value": "NEUTRAL" },
+          "7": { "description": "Reverse", "value": "REVERSE" },
+          "8": { "description": "Park",    "value": "PARK" }
+        }}
+    }
+  ]},
 { "hdr": "6F1", "rax": "663", "eax": "63", "fcm1": true, "cmd": {"22": "D107"}, "freq": 0.25, "dbgfilter": { "to": 2025, "from": 2027 },
   "signals": [
     {"id": "IX1_VSS", "path": "Movement", "fmt": { "len": 16, "max": 255, "div": 10, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Speedometer vehicle speed"}
